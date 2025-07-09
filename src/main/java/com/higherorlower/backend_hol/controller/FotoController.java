@@ -18,7 +18,7 @@ public class FotoController {
     @Autowired
     private FotoRepository fotoRepository;
 
-    @GetMapping
+    @GetMapping("/")
     public List<Foto> getFotos() {
         return fotoRepository.findAll();
     }
